@@ -16,7 +16,7 @@ const roomRoutes = require("./routes/roomRoutes");
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://chatz-silk.vercel.app",],
-    methods : ["GET", "POST", "PUT", "DELETE"],
+    methods : ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     credentials: true,
   })
 );
