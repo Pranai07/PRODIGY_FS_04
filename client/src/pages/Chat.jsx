@@ -4,7 +4,7 @@ import WelcomeScreen from "../components/chat/WelcomeScreen";
 import ReplyPreview from "../components/chat/ReplyPreview";
 import AttachmentPreview from "../components/chat/AttachmentPreview";
 import ChatHeader from "../components/chat/ChatHeader";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Sidebar from "../components/sidebar/Sidebar";
 import MessageInput from "../components/chat/MessageInput";
 import MessageBubble from "../components/messages/MessageBubble";
 import ProfileModal from "../components/profile/ProfileModal";
