@@ -1,0 +1,127 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  avatar    String?
+
+  lastSeen  DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  messages            Message[]
+  reactions           MessageReaction[]
+  conversationMembers ConversationMember[]
+  roomMembers         RoomMember[]
+  createdRooms        Room[]               @relation("RoomCreator")
+}
+
+model Conversation {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  members  ConversationMember[]
+  messages Message[]
+}
+
+model ConversationMember {
+  id             String    @id @default(uuid())
+  userId         String
+  conversationId String
+  lastReadAt     DateTime?
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, conversationId])
+}
+
+model Message {
+  id             String  @id @default(uuid())
+  content        String
+  senderId       String
+  conversationId String?
+  roomId         String?
+
+  messageType String  @default("text")
+  fileUrl     String?
+  fileName    String?
+  fileSize    Int?
+  mimeType    String?
+
+  isEdited  Boolean   @default(false)
+  isDeleted Boolean   @default(false)
+  deletedAt DateTime?
+
+  isDelivered Boolean   @default(false)
+  deliveredAt DateTime?
+  
+  isRead    Boolean   @default(false)
+  readAt    DateTime?
+  replyToId String?
+
+  replyTo Message?  @relation("MessageReplies", fields: [replyToId], references: [id], onDelete: SetNull)
+  replies Message[] @relation("MessageReplies")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sender       User              @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  conversation Conversation?     @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  room         Room?             @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  reactions    MessageReaction[]
+}
+
+model MessageReaction {
+  id        String   @id @default(uuid())
+  emoji     String
+  userId    String
+  messageId String
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  message Message @relation(fields: [messageId], references: [id], onDelete: Cascade)
+
+  // One user can have only one reaction
+  // of the same emoji on the same message.
+  @@unique([userId, messageId, emoji])
+  @@index([messageId])
+  @@index([userId])
+}
+
+model Room {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  creatorId   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  creator  User         @relation("RoomCreator", fields: [creatorId], references: [id], onDelete: Cascade)
+  members  RoomMember[]
+  messages Message[]
+}
+
+model RoomMember {
+  id         String    @id @default(uuid())
+  userId     String
+  roomId     String
+  joinedAt   DateTime  @default(now())
+  lastReadAt DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  room Room @relation(fields: [roomId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, roomId])
+}

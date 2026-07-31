@@ -1,0 +1,76 @@
+.rename-room-modal {
+  width: 420px;
+  max-width: 95%;
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.rename-body {
+  margin: 20px 0;
+}
+
+.rename-body label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.rename-body input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--background-secondary);
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.rename-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.save-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #1d4ed8;
+}
+
+.rename-room-modal {
+  animation: rename-modal-in 0.2s ease-out;
+}
+
+@keyframes rename-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.save-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

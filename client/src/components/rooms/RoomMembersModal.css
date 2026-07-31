@@ -1,0 +1,204 @@
+.room-members-modal {
+  width: 420px;
+  max-width: 95%;
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.member-count {
+  margin: 12px 0 18px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 52vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 4px;
+
+}
+
+.member-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: var(--background-secondary);
+}
+
+.member-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.member-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.member-email {
+  font-size: 13px;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.you-badge {
+  background: #2563eb;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 11px;
+}
+
+.loading-members,
+.empty-members {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-secondary);
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #ef4444;
+}
+.owner-badge {
+  display: inline-flex;
+  align-items: center;
+
+  margin-left: 8px;
+  padding: 3px 8px;
+
+  border-radius: 999px;
+
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.remove-member-btn {
+  margin-left: auto;
+  padding: 6px 11px;
+
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 7px;
+
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  transition: 0.2s ease;
+}
+
+.remove-member-btn:hover {
+  background: #ef4444;
+  color: #fff;
+}
+.remove-member-btn {
+  margin-left: auto;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.room-members-modal {
+  width: min(440px, 90vw);
+  max-height: 75vh;
+  overflow: hidden;
+
+  padding: 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+
+  background: #161a23;
+  color: #fff;
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.4);
+
+  animation: members-modal-open 0.18s ease-out;
+}
+
+@keyframes members-modal-open {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes members-overlay-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes members-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
