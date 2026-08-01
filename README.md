@@ -1,7 +1,7 @@
 # 💬 CHATZ – Modern Real-Time Chat Application
 
 <p align="center">
-  <img src="client/src/assets/banner.png" alt="CHATZ Banner" width="100%">
+  <img src="assets/banner.png" alt="CHATZ Banner" width="100%">
 </p>
 
 <p align="center">
