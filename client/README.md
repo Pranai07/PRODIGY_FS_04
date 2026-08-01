@@ -1,341 +1,589 @@
 # 💬 CHATZ – Modern Real-Time Chat Application
 
-<img src="assets/banner.png" width="100%" />
-
 <p align="center">
-Connect. Chat. Stay Together.
+  <img src="assets/banner.png" alt="CHATZ Banner" width="100%">
 </p>
 
 <p align="center">
-A secure, feature-rich real-time messaging application built with React, Node.js, Express, Socket.IO, Prisma, PostgreSQL and Cloudinary.
+  <h3 align="center">🚀 Connect. Chat. Stay Together.</h3>
+  <p align="center">
+    A full-stack real-time messaging platform built with React, Node.js, Express, Socket.IO, Prisma, PostgreSQL, and Cloudinary.
+  </p>
 </p>
 
 ---
-
-## ✨ Features
-<div align="center">
-
-# 💬 Chatz
-
-### 🚀 A Modern Full-Stack Real-Time Chat Application
-
-<p align="center">
-Real-time messaging platform built with React, Node.js, Express, Socket.IO, Prisma, PostgreSQL and Cloudinary.
-</p>
 
 <p align="center">
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)
-![Node](https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/Express-5-000000?style=for-the-badge&logo=express)
-![Socket.IO](https://img.shields.io/badge/Socket.IO-4-010101?style=for-the-badge&logo=socketdotio)
+
+![NodeJS](https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=node.js)
+
+![Express](https://img.shields.io/badge/Express-Backend-000000?style=for-the-badge&logo=express)
+
+![Socket.IO](https://img.shields.io/badge/Socket.IO-Real--Time-black?style=for-the-badge&logo=socketdotio)
+
 ![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-4169E1?style=for-the-badge&logo=postgresql)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-Image%20Storage-3448C5?style=for-the-badge&logo=cloudinary)
 
-</p>
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql)
 
-<p align="center">
+![Cloudinary](https://img.shields.io/badge/Cloudinary-Media-3448C5?style=for-the-badge&logo=cloudinary)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/Chatz?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/YOUR_USERNAME/Chatz?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/Chatz?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/Chatz?style=flat-square)
+![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens)
+
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 </p>
 
 ---
 
-## 🌐 Live Demo
+# 📖 About the Project
 
-### 💻 Frontend
+**CHATZ** is a modern, scalable, full-stack real-time messaging platform designed to deliver a seamless communication experience for individuals and groups.
 
-https://chatz-silk.vercel.app
+The application combines **REST APIs** with **Socket.IO WebSockets** to provide instant message delivery, typing indicators, online presence tracking, read receipts, and real-time synchronization across multiple devices.
+
+Built using modern web technologies and industry best practices, CHATZ focuses on performance, security, and scalability while maintaining a clean, responsive user interface.
+
+---
+
+## 🌟 Highlights
+
+- 💬 Real-Time Private Messaging
+- 👥 Group Chat Rooms
+- ⚡ Instant Message Delivery
+- 🟢 Live Online/Offline Status
+- ⌨️ Typing Indicators
+- ✅ Read Receipts
+- 📷 Image Sharing
+- 📁 File Sharing
+- 😀 Emoji Reactions
+- 🔍 User Search
+- ☁️ Cloudinary Media Storage
+- 🔐 JWT Authentication
+- 🛡 Protected Routes
+- 📱 Fully Responsive UI
+- ⚙️ REST API + Socket.IO Architecture
+
+---
+
+# 🎯 Project Goals
+
+The objective of CHATZ is to demonstrate the implementation of a production-style messaging platform using a modern JavaScript technology stack.
+
+This project showcases:
+
+- Authentication & Authorization
+- RESTful API Design
+- WebSocket Communication
+- Real-Time Event Handling
+- PostgreSQL Database Design
+- Prisma ORM
+- Responsive React Frontend
+- Secure Backend Architecture
+- Cloud Media Management
+- Modern UI/UX Design
+
+---
+
+# 🚀 Live Demo
+
+### 🌐 Frontend
+
+> https://chatz-silk.vercel.app
 
 ### ⚙️ Backend API
 
-https://chatz-cgvo.onrender.com
+> https://chatz-cgvo.onrender.com
 
 ---
 
-## 📸 Screenshots
+# 👨‍💻 Developer
 
-> Replace these with screenshots from your application.
+**Pranai Sai**
 
-| Login | Register |
-|-------|----------|
-| ![](screenshots/login.png) | ![](screenshots/register.png) |
+B.Tech Graduate | Full Stack Developer
 
-| Private Chat | Group Chat |
-|---------------|------------|
-| ![](screenshots/chat.png) | ![](screenshots/group.png) |
-
-| Light Theme | Dark Theme |
-|-------------|------------|
-| ![](screenshots/light.png) | ![](screenshots/dark.png) |
+GitHub:
+https://github.com/Pranai07
 
 ---
-
-# 📖 Table of Contents
-
-- Introduction
-- Features
-- Tech Stack
-- System Architecture
-- Authentication Flow
-- Private Chat Flow
-- Group Chat Flow
-- Database Schema
-- Folder Structure
-- REST API
-- Socket Events
-- Installation
-- Deployment
-- Security
-- Performance
-- Future Enhancements
-- License
-
----
-
-# 📌 Introduction
-
-**Chatz** is a modern real-time messaging platform inspired by applications like WhatsApp and Discord. It provides secure one-to-one messaging, group conversations, live message delivery, typing indicators, read receipts, reactions, attachments, customizable themes, and browser notifications—all backed by a scalable Node.js and PostgreSQL architecture.
-
-The project demonstrates modern full-stack development practices, real-time communication, responsive UI design, and production deployment using cloud platforms.
-
----
-
 # ✨ Features
 
-## 🔐 Authentication
+## 💬 Messaging
 
-- Secure user registration
-- Secure login
+- 🚀 Real-time one-to-one messaging
+- 👥 Group conversations
+- 📩 Instant message delivery using Socket.IO
+- ✍️ Typing indicators
+- ✅ Read receipts
+- 🗑️ Delete messages
+- 📝 Edit messages
+- 😊 Emoji support
+- 📷 Image sharing
+- 📁 File sharing
+- 📌 Message timestamps
+
+---
+
+## 👤 User Management
+
+- Secure Registration
 - JWT Authentication
-- Password hashing using bcrypt
-- Protected routes
-- Persistent authentication
-- Secure logout
+- Login / Logout
+- Protected Routes
+- User Profiles
+- Last Seen
+- Online / Offline Status
+- Search Users
+- Update Profile Picture
 
 ---
 
-## 👤 User Profile
+## 👥 Rooms
 
-- Update display name
-- Upload profile picture
-- Cloudinary image storage
-- Live profile updates
-- Initial avatar fallback
-
----
-
-## 💬 Private Messaging
-
-- One-to-one conversations
-- Real-time messaging
-- Instant delivery
-- Read receipts
-- Delivered status
-- Reply to messages
-- Edit messages
-- Delete messages
-- Search messages
-- Message timestamps
-- Date separators
-- Auto scrolling
-
----
-
-## 👥 Group Chat
-
-- Create rooms
-- Join rooms
-- Leave rooms
-- Delete rooms
-- Rename rooms
-- View members
-- Remove members
-- Member count
-- Real-time room updates
-
----
-
-## 😀 Emoji Support
-
-- React to messages
-- Multiple reactions
-- Live reaction synchronization
-
----
-
-## 📎 Attachments
-
-- Images
-- PDF files
-- DOC files
-- DOCX files
-- TXT files
-- Image preview
-- File preview
-- File size display
-
----
-
-## 🔔 Notifications
-
-- Browser notifications
-- Unread conversations
-- Unread room messages
-- Live updates
-
----
-
-## 🌙 Personalization
-
-- Light Theme
-- Dark Theme
-- System Theme
-- Chat Wallpapers
-- Appearance Settings
+- Create Rooms
+- Join Rooms
+- Leave Rooms
+- Room Members
+- Room Chat History
+- Room Information
 
 ---
 
 ## ⚡ Real-Time Features
 
-- Online status
-- Last seen
-- Typing indicator
-- Live messaging
-- Live reactions
-- Live profile updates
-- Live room updates
+- Live Notifications
+- Instant Message Updates
+- Typing Status
+- Online Presence
+- Socket.IO Rooms
+- Live Conversation Updates
+- Auto Refresh Without Reloading
+
+---
+
+## ☁ Media Support
+
+- Cloudinary Image Upload
+- Cloudinary File Storage
+- Secure Media URLs
+- Optimized Image Delivery
 
 ---
 
 # 🛠 Tech Stack
 
-## Frontend
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | React 19, Vite, Axios, React Router DOM |
+| Backend | Node.js, Express.js |
+| Database | PostgreSQL |
+| ORM | Prisma |
+| Real-Time | Socket.IO |
+| Authentication | JWT, bcrypt |
+| File Storage | Cloudinary |
+| Styling | CSS3 |
+| Version Control | Git & GitHub |
+| Deployment | Vercel, Render |
+| Package Manager | npm |
 
-- React 19
-- Vite
-- Axios
+---
+
+# 📊 Project Statistics
+
+| Feature | Status |
+|---------|--------|
+| Authentication | ✅ |
+| Private Chat | ✅ |
+| Group Chat | ✅ |
+| Socket.IO | ✅ |
+| PostgreSQL | ✅ |
+| Prisma ORM | ✅ |
+| Image Upload | ✅ |
+| File Upload | ✅ |
+| Read Receipts | ✅ |
+| Typing Indicator | ✅ |
+| Online Status | ✅ |
+| Protected Routes | ✅ |
+| Responsive UI | ✅ |
+| REST API | ✅ |
+| Cloudinary Integration | ✅ |
+
+---
+
+# 📦 Major Dependencies
+
+### Frontend
+
+```text
+React
+Vite
+Axios
+React Router DOM
+Socket.IO Client
+```
+
+### Backend
+
+```text
+Express
+Socket.IO
+Prisma
+PostgreSQL
+JWT
+bcrypt
+Cloudinary
+cookie-parser
+dotenv
+multer
+```
+
+---
+
+# 🏆 Key Highlights
+
+- ⚡ Fully Real-Time Messaging Platform
+- 🔐 Secure JWT Authentication
+- 🟢 Live User Presence
+- 📷 Cloud Media Uploads
+- 💬 Private & Group Messaging
+- 📱 Responsive Modern UI
+- ☁ Cloud Deployment
+- 🏗 Clean MVC Architecture
+- 🗄 PostgreSQL + Prisma ORM
+- 🌐 Production Ready REST API
+
+---
+
+# 📈 Project Overview
+
+| Metric | Value |
+|---------|-------|
+| Frontend | React + Vite |
+| Backend | Express.js |
+| Database | PostgreSQL |
+| ORM | Prisma |
+| APIs | REST |
+| Real-Time Engine | Socket.IO |
+| Authentication | JWT |
+| Storage | Cloudinary |
+| Deployment | Vercel + Render |
+| Architecture | Client–Server |
+
+---
+# 📂 Project Structure
+
+```text
+CHATZ
+│
+├── assets
+│   └── banner.png
+│
+├── client
+│   ├── public
+│   ├── src
+│   │   ├── assets
+│   │   ├── components
+│   │   │   ├── chat
+│   │   │   ├── common
+│   │   │   ├── rooms
+│   │   │   └── sidebar
+│   │   │
+│   │   ├── context
+│   │   ├── hooks
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── utils
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+├── server
+│   ├── prisma
+│   ├── src
+│   │   ├── config
+│   │   ├── controllers
+│   │   ├── middleware
+│   │   ├── routes
+│   │   ├── socket
+│   │   ├── services
+│   │   ├── utils
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   └── package.json
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🏗 Application Architecture
+
+```
+                ┌──────────────────────┐
+                │      React Client     │
+                │      (Vite + Axios)   │
+                └──────────┬────────────┘
+                           │
+                 HTTP REST │ WebSocket
+                           │
+          ┌────────────────▼────────────────┐
+          │       Express.js Server          │
+          │                                 │
+          │  Authentication (JWT)           │
+          │  REST APIs                      │
+          │  Socket.IO                      │
+          │  Controllers                    │
+          │  Services                       │
+          └──────────────┬──────────────────┘
+                         │
+             Prisma ORM  │
+                         │
+                ┌────────▼────────┐
+                │   PostgreSQL     │
+                └──────────────────┘
+                         │
+                         │
+               Cloudinary Storage
+                         │
+               Images & File Uploads
+```
+
+---
+
+# 🧱 MVC Architecture
+
+```
+Client (React)
+      │
+      ▼
+Routes
+      │
+      ▼
+Controllers
+      │
+      ▼
+Services
+      │
+      ▼
+Prisma ORM
+      │
+      ▼
+PostgreSQL
+```
+
+---
+
+# 📁 Folder Explanation
+
+## 🎨 client/
+
+Contains the complete React frontend application.
+
+### Main Responsibilities
+
+- User Interface
+- Authentication
+- Chat Screens
+- Room Management
+- API Requests
 - Socket.IO Client
-- React Hot Toast
-- Lucide React
-- CSS3
+- State Management
 
 ---
 
-## Backend
+## ⚙️ server/
 
-- Node.js
-- Express.js
-- Socket.IO
-- Prisma ORM
-- JWT
-- bcrypt
-- Multer
+Contains the Express backend.
 
----
+### Responsibilities
 
-## Database
-
-- PostgreSQL
-- Neon Database
+- REST APIs
+- Authentication
+- Authorization
+- Socket.IO Server
+- Database Access
+- Business Logic
+- File Uploads
 
 ---
 
-## Cloud
+## 📂 controllers/
 
+Responsible for handling incoming requests and returning responses.
+
+Examples:
+
+- Auth Controller
+- User Controller
+- Conversation Controller
+- Message Controller
+- Room Controller
+
+---
+
+## 📂 services/
+
+Contains business logic.
+
+Responsible for:
+
+- Database Operations
+- Validation
+- Complex Queries
+- Helper Functions
+
+---
+
+## 📂 routes/
+
+Defines API endpoints.
+
+Example:
+
+```
+POST /api/auth/login
+POST /api/auth/register
+
+GET /api/users
+
+GET /api/messages/:conversationId
+
+POST /api/messages
+
+POST /api/rooms
+```
+
+---
+
+## 📂 socket/
+
+Contains Socket.IO logic.
+
+Handles:
+
+- User Connection
+- User Disconnection
+- Typing Events
+- Message Broadcasting
+- Online Status
+- Room Events
+
+---
+
+## 📂 middleware/
+
+Responsible for
+
+- JWT Authentication
+- Error Handling
+- Authorization
+- Request Validation
+
+---
+
+## 📂 config/
+
+Contains configuration files.
+
+Examples
+
+- Prisma
 - Cloudinary
+- Environment Config
 
 ---
 
-## Deployment
+# 🔄 Application Flow
 
-- Vercel
-- Render
-
----
-
-# 🏗 System Architecture
-
-```mermaid
-graph LR
-
-A[React Frontend]
-
-B[Express Backend]
-
-C[Socket.IO]
-
-D[PostgreSQL]
-
-E[Cloudinary]
-
-A -->|REST API| B
-
-A -->|WebSocket| C
-
-B --> D
-
-B --> E
-
-C --> B
+```
+User
+   │
+   ▼
+React UI
+   │
+   ▼
+Axios Request
+   │
+   ▼
+Express Route
+   │
+   ▼
+Controller
+   │
+   ▼
+Service
+   │
+   ▼
+Prisma ORM
+   │
+   ▼
+PostgreSQL
+   │
+   ▼
+Response
+   │
+   ▼
+React UI Update
 ```
 
 ---
 
-# 🔐 Authentication Flow
+# ⚡ Socket.IO Event Flow
 
-```mermaid
-sequenceDiagram
-
-User->>Frontend: Login
-
-Frontend->>Backend: POST /login
-
-Backend->>Database: Verify User
-
-Database-->>Backend: User Found
-
-Backend->>Backend: Verify Password
-
-Backend->>Backend: Generate JWT
-
-Backend-->>Frontend: Cookie + User
-
-Frontend-->>User: Dashboard
+```
+User A Sends Message
+          │
+          ▼
+Socket.IO Client
+          │
+          ▼
+Socket.IO Server
+          │
+          ▼
+Save Message (PostgreSQL)
+          │
+          ▼
+Emit Event
+          │
+          ▼
+User B Receives Message Instantly
 ```
 
 ---
 
-# 💬 Private Chat Flow
+# 🛡 Security Layers
 
-```mermaid
-sequenceDiagram
+✔ JWT Authentication
 
-Sender->>Frontend: Send Message
+✔ Password Hashing (bcrypt)
 
-Frontend->>Backend: API Request
+✔ Protected Routes
 
-Backend->>Database: Save Message
+✔ Authentication Middleware
 
-Database-->>Backend: Success
+✔ CORS Protection
 
-Backend->>Socket.IO: Emit Event
+✔ Environment Variables
 
-Socket.IO-->>Receiver: New Message
+✔ Secure File Uploads
 
-Receiver->>Frontend: Update UI
-```
+✔ Database Validation
+
+---
 # 🗄 Database Design
 
-The application uses **PostgreSQL** with **Prisma ORM** to maintain relationships between users, conversations, rooms, messages, reactions, and attachments.
+CHATZ uses **PostgreSQL** as its primary relational database with **Prisma ORM** to manage models, relationships, and queries.
 
-## Entity Relationship Diagram (ERD)
+The database is designed to support authentication, private messaging, group chats, reactions, attachments, and real-time communication while maintaining data integrity.
+
+---
+
+# 🏛 Entity Relationship Diagram (ERD)
 
 ```mermaid
 erDiagram
@@ -345,20 +593,21 @@ CONVERSATION ||--o{ CONVERSATION_PARTICIPANT : contains
 
 USER ||--o{ MESSAGE : sends
 CONVERSATION ||--o{ MESSAGE : contains
-ROOM ||--o{ MESSAGE : contains
-
-MESSAGE ||--o{ REACTION : has
-USER ||--o{ REACTION : reacts
 
 ROOM ||--o{ ROOM_MEMBER : contains
 USER ||--o{ ROOM_MEMBER : joins
 
-MESSAGE ||--|| MESSAGE : replies_to
+ROOM ||--o{ MESSAGE : contains
+
+MESSAGE ||--o{ REACTION : has
+USER ||--o{ REACTION : creates
+
+MESSAGE ||--|| MESSAGE : reply_to
 ```
 
 ---
 
-# 🧩 Database Models
+# 📊 Database Models
 
 ## 👤 User
 
@@ -398,15 +647,15 @@ MESSAGE ||--|| MESSAGE : replies_to
 | Field | Type |
 |---------|------|
 | id | UUID |
-| content | String |
-| messageType | Text/Image/File |
-| fileUrl | String |
-| fileName | String |
-| fileSize | Integer |
 | senderId | UUID |
 | conversationId | UUID |
 | roomId | UUID |
 | replyToId | UUID |
+| content | Text |
+| messageType | Text / Image / File |
+| fileUrl | String |
+| fileName | String |
+| fileSize | Integer |
 | isEdited | Boolean |
 | isDeleted | Boolean |
 | createdAt | DateTime |
@@ -419,8 +668,8 @@ MESSAGE ||--|| MESSAGE : replies_to
 |---------|------|
 | id | UUID |
 | emoji | String |
-| userId | UUID |
 | messageId | UUID |
+| userId | UUID |
 
 ---
 
@@ -445,143 +694,31 @@ MESSAGE ||--|| MESSAGE : replies_to
 
 ---
 
-# 📂 Project Structure
+# 🔄 Message Lifecycle
 
-```
-Chatz
-│
-├── client
-│   │
-│   ├── public
-│   │
-│   ├── src
-│   │   │
-│   │   ├── assets
-│   │   ├── components
-│   │   │   ├── Appearance
-│   │   │   ├── ChatWallpaper
-│   │   │   ├── chat
-│   │   │   ├── messages
-│   │   │   ├── profile
-│   │   │   ├── rooms
-│   │   │   └── sidebar
-│   │   │
-│   │   ├── constants
-│   │   ├── context
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── utils
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
-│   └── package.json
-│
-├── server
-│   │
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── prisma
-│   ├── routes
-│   ├── socket
-│   ├── uploads
-│   ├── utils
-│   ├── app.js
-│   └── server.js
-│
-└── README.md
-```
-
----
-
-# 🔄 Application Flow
-
-```mermaid
-flowchart TD
-
-User
-
-User --> Login
-
-Login --> JWT
-
-JWT --> Dashboard
-
-Dashboard --> PrivateChat
-
-Dashboard --> GroupChat
-
-PrivateChat --> SendMessage
-
-SendMessage --> Database
-
-Database --> SocketIO
-
-SocketIO --> Receiver
-
-Receiver --> UpdateUI
-```
-
----
-
-# 💬 Private Chat Flow
-
-```mermaid
-flowchart LR
-
-Sender
-
-Sender --> API
-
-API --> Prisma
-
-Prisma --> PostgreSQL
-
-PostgreSQL --> SocketIO
-
-SocketIO --> Receiver
-
-Receiver --> ChatScreen
-```
-
----
-
-# 👥 Group Chat Flow
-
-```mermaid
-flowchart LR
-
-User
-
-User --> JoinRoom
-
-JoinRoom --> SocketRoom
-
-SocketRoom --> Broadcast
-
-Broadcast --> Members
-```
-
----
-
-# 📎 File Upload Flow
-
-```mermaid
-flowchart TD
-
-ChooseFile
-
-ChooseFile --> Backend
-
-Backend --> Cloudinary
-
-Cloudinary --> URL
-
-URL --> PostgreSQL
-
-PostgreSQL --> SocketIO
-
-SocketIO --> Receiver
+```text
+User Types Message
+        │
+        ▼
+Frontend Validation
+        │
+        ▼
+REST API Request
+        │
+        ▼
+Express Controller
+        │
+        ▼
+Prisma ORM
+        │
+        ▼
+PostgreSQL Database
+        │
+        ▼
+Socket.IO Broadcast
+        │
+        ▼
+Receiver Updates Instantly
 ```
 
 ---
@@ -592,12 +729,12 @@ SocketIO --> Receiver
 
 | Event | Description |
 |---------|-------------|
-| user:online | User connected |
-| conversation:join | Join private room |
-| conversation:leave | Leave private room |
-| room:join | Join group room |
-| room:leave | Leave group room |
-| typing:start | User typing |
+| user:online | User connects |
+| conversation:join | Join private conversation |
+| conversation:leave | Leave conversation |
+| room:join | Join room |
+| room:leave | Leave room |
+| typing:start | User started typing |
 | typing:stop | User stopped typing |
 
 ---
@@ -606,755 +743,107 @@ SocketIO --> Receiver
 
 | Event | Description |
 |---------|-------------|
-| message:new | New private message |
-| room:message:new | New room message |
+| message:new | Receive new message |
 | message:updated | Edited message |
 | message:deleted | Deleted message |
-| message:reaction:update | Emoji reaction |
-| users:online | Online users |
-| user:last-seen-updated | Last seen update |
-| room:renamed | Room renamed |
-| room:deleted | Room deleted |
-| room:members-updated | Members changed |
+| users:online | Online users list |
+| user:last-seen-updated | Update last seen |
+| typing:start | Display typing indicator |
+| typing:stop | Hide typing indicator |
 
 ---
 
-# 🌐 REST API
+# 🌐 REST API Documentation
 
-## Authentication
+## 🔐 Authentication
 
-| Method | Endpoint |
-|---------|----------|
-| POST | /api/auth/register |
-| POST | /api/auth/login |
-| POST | /api/auth/logout |
-| GET | /api/auth/profile |
-
----
-
-## Users
-
-| Method | Endpoint |
-|---------|----------|
-| GET | /api/users |
-| PUT | /api/users/profile |
-| PATCH | /api/users/avatar |
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Login |
+| POST | `/api/auth/logout` | Logout |
+| GET | `/api/auth/profile` | Get logged-in user |
 
 ---
 
-## Conversations
+## 👤 Users
 
-| Method | Endpoint |
-|---------|----------|
-| POST | /api/conversations |
-| GET | /api/messages/:conversationId |
-
----
-
-## Messages
-
-| Method | Endpoint |
-|---------|----------|
-| POST | /api/messages |
-| PATCH | /api/messages/:id |
-| DELETE | /api/messages/:id |
-| POST | /api/messages/reaction |
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/api/users` | Get all users |
+| PUT | `/api/users/profile` | Update profile |
+| PATCH | `/api/users/avatar` | Update avatar |
 
 ---
 
-## Rooms
+## 💬 Conversations
 
-| Method | Endpoint |
-|---------|----------|
-| POST | /api/rooms |
-| GET | /api/rooms |
-| PATCH | /api/rooms/:id |
-| DELETE | /api/rooms/:id |
-| POST | /api/rooms/join |
-| POST | /api/rooms/leave |
-# ⚙️ Installation Guide
-
-## Prerequisites
-
-Before running the project, make sure the following are installed:
-
-- Node.js (v18 or above)
-- npm
-- PostgreSQL (or Neon Database)
-- Git
-- Cloudinary Account
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/conversations` | Create conversation |
+| GET | `/api/messages/:conversationId` | Conversation messages |
 
 ---
 
-## Clone Repository
+## 📨 Messages
 
-```bash
-git clone https://github.com/YOUR_USERNAME/Chatz.git
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/messages` | Send message |
+| PATCH | `/api/messages/:id` | Edit message |
+| DELETE | `/api/messages/:id` | Delete message |
+| POST | `/api/messages/reaction` | Add/remove reaction |
 
-cd Chatz
+---
+
+## 👥 Rooms
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/rooms` | Create room |
+| GET | `/api/rooms` | Get rooms |
+| PATCH | `/api/rooms/:id` | Rename room |
+| DELETE | `/api/rooms/:id` | Delete room |
+| POST | `/api/rooms/join` | Join room |
+| POST | `/api/rooms/leave` | Leave room |
+
+---
+
+# ⚙️ API Response Example
+
+### Successful Login
+
+```json
+{
+  "success": true,
+  "message": "Login successful",
+  "user": {
+    "id": "uuid",
+    "name": "John Doe",
+    "email": "john@example.com"
+  }
+}
 ```
 
 ---
 
-# 📦 Install Dependencies
+### Error Response
 
-## Frontend
-
-```bash
-cd client
-
-npm install
+```json
+{
+  "success": false,
+  "message": "Invalid credentials"
+}
 ```
 
 ---
 
-## Backend
-
-```bash
-cd ../server
-
-npm install
-```
-
----
-
-# 🔐 Environment Variables
-
-## Backend (.env)
-
-```env
-DATABASE_URL=
-
-JWT_SECRET=
-
-CLOUDINARY_CLOUD_NAME=
-
-CLOUDINARY_API_KEY=
-
-CLOUDINARY_API_SECRET=
-
-PORT=5000
-```
-
----
-
-## Frontend (.env)
-
-```env
-VITE_API_URL=https://chatz-cgvo.onrender.com/api
-
-VITE_SOCKET_URL=https://chatz-cgvo.onrender.com
-```
-
----
-
-# ▶ Running Locally
-
-## Backend
-
-```bash
-cd server
-
-npm run dev
-```
-
----
-
-## Frontend
-
-```bash
-cd client
-
-npm run dev
-```
-
-Application will start at
-
-Frontend
-
-```
-http://localhost:5173
-```
-
-Backend
-
-```
-http://localhost:5000
-```
-
----
-
-# ☁ Deployment Architecture
-
-```mermaid
-flowchart LR
-
-Developer
-
-Developer --> GitHub
-
-GitHub --> Vercel
-
-GitHub --> Render
-
-Render --> PostgreSQL
-
-Render --> Cloudinary
-
-Vercel --> Browser
-```
-
----
-
-# 🚀 Production Deployment
-
-## Frontend
-
-Platform
-
-```
-Vercel
-```
-
-Framework
-
-```
-Vite
-```
-
-Build Command
-
-```
-npm run build
-```
-
-Output Directory
-
-```
-dist
-```
-
----
-
-## Backend
-
-Platform
-
-```
-Render
-```
-
-Build Command
-
-```
-npm install && npx prisma generate
-```
-
-Start Command
-
-```
-npm start
-```
-
----
-
-## Database
-
-```
-Neon PostgreSQL
-```
-
----
-
-## File Storage
-
-```
-Cloudinary
-```
-
----
-
-# 🔒 Security Features
-
-✔ JWT Authentication
-
-✔ Password Hashing using bcrypt
-
-✔ Secure Password Verification
-
-✔ Protected Routes
-
-✔ CORS Protection
-
-✔ Helmet Middleware
-
-✔ Environment Variables
-
-✔ Secure Cookie Authentication
-
-✔ SQL Injection Protection via Prisma ORM
-
-✔ Request Validation
-
-✔ Authentication Middleware
-
-✔ Room Authorization
-
-✔ Message Ownership Validation
-
-✔ User Authorization Checks
-
----
-
-# ⚡ Performance Optimizations
-
-- Socket.IO Real-Time Communication
-- Auto Scroll Management
-- Browser Notification API
-- Efficient React State Updates
-- Duplicate Message Prevention
-- Optimistic UI Updates
-- Lazy Image Loading
-- Cloudinary CDN Delivery
-- Hidden Scrollbars
-- Automatic Message Read Detection
-- Delivered Message Tracking
-- Optimized Database Queries
-- Efficient Room Synchronization
-- Automatic Theme Persistence
-- Wallpaper Caching
-
----
-
-# 📊 Feature Matrix
-
-| Module | Status |
-|---------|:------:|
-| Authentication | ✅ |
-| User Profile | ✅ |
-| Private Chat | ✅ |
-| Group Chat | ✅ |
-| Room Management | ✅ |
-| File Upload | ✅ |
-| Image Preview | ✅ |
-| Message Reply | ✅ |
-| Edit Message | ✅ |
-| Delete Message | ✅ |
-| Emoji Reactions | ✅ |
-| Read Receipts | ✅ |
-| Delivered Status | ✅ |
-| Online Status | ✅ |
-| Last Seen | ✅ |
-| Typing Indicator | ✅ |
-| Browser Notifications | ✅ |
-| Search Messages | ✅ |
-| Chat Wallpapers | ✅ |
-| Light Theme | ✅ |
-| Dark Theme | ✅ |
-| System Theme | ✅ |
-| Responsive UI | ✅ |
-| Cloudinary Upload | ✅ |
-| PostgreSQL | ✅ |
-| Prisma ORM | ✅ |
-| Socket.IO | ✅ |
-| JWT Security | ✅ |
-| Deployment | ✅ |
-
----
-
-# 📈 Scalability
-
-The project has been designed using a modular architecture.
-
-Future scaling can include
-
-- Microservices
-- Redis Caching
-- Docker
-- Kubernetes
-- Nginx Reverse Proxy
-- Load Balancing
-- Horizontal Scaling
-- Message Queue
-- Email Notifications
-- Push Notifications
-- AI Chat Assistant
-
----
-
-# 🧪 Testing Checklist
-
-## Authentication
-
-- Register
-- Login
-- Logout
-
----
-
-## Private Chat
-
-- Send Message
-- Receive Message
-- Edit Message
-- Delete Message
-- Reply
-- Search
-
----
-
-## Rooms
-
-- Create Room
-- Join Room
-- Leave Room
-- Rename Room
-- Delete Room
-
----
-
-## Profile
-
-- Update Name
-- Upload Avatar
-
----
-
-## Attachments
-
-- Upload Image
-- Upload File
-- Preview Image
-- Download File
-
----
-
-## Real-Time
-
-- Typing Indicator
-- Online Status
-- Last Seen
-- Read Receipts
-- Delivered Status
-- Emoji Reactions
-
----
-
-# 📦 Build Statistics
-
-Architecture
-
-```
-Client-Server
-```
-
-Communication
-
-```
-REST API + WebSockets
-```
-
-Database
-
-```
-PostgreSQL
-```
-
-ORM
-
-```
-Prisma
-```
-
-Authentication
-
-```
-JWT
-```
-
-Deployment
-
-```
-Vercel + Render
-```
-
-Storage
-
-```
-Cloudinary
-```
-
----
-
-# 🎯 Learning Outcomes
-
-This project demonstrates practical experience with:
-
-- Full Stack Web Development
-- REST API Design
-- Real-Time Communication
-- Authentication & Authorization
-- PostgreSQL Database Design
-- Prisma ORM
-- React Hooks
-- State Management
-- Socket.IO
-- Cloud Deployment
-- Image Upload & Storage
-- Responsive UI Design
-- Production Debugging
-- Git & GitHub Workflow
-# 🤝 Contributing
-
-Contributions are welcome!
-
-If you'd like to improve **Chatz**, feel free to fork the repository and submit a Pull Request.
-
-### Steps
-
-1. Fork the repository
-
-2. Create your feature branch
-
-```bash
-git checkout -b feature/AmazingFeature
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add AmazingFeature"
-```
-
-4. Push to the branch
-
-```bash
-git push origin feature/AmazingFeature
-```
-
-5. Open a Pull Request
-
----
-
-# 🐞 Troubleshooting
-
-## Socket.IO not connecting
-
-Check
-
-- Backend is running
-- Correct Socket URL
-- CORS configuration
-- Render service is awake
-
----
-
-## Images not uploading
-
-Verify
-
-- Cloudinary credentials
-- Multer configuration
-- File size limits
-
----
-
-## Database Connection Error
-
-Check
-
-- DATABASE_URL
-- Prisma migration
-- Neon database status
-
----
-
-## Authentication Issues
-
-Verify
-
-- JWT_SECRET
-- Cookies enabled
-- Protected routes
-- CORS credentials
-
----
-
-## Deployment Issues
-
-Frontend
-
-- Check Vercel Environment Variables
-- Verify API URL
-- Verify Socket URL
-
-Backend
-
-- Check Render Logs
-- Verify Prisma Client Generation
-- Verify Environment Variables
-
----
-
-# 🚀 Future Roadmap
-
-### Messaging
-
-- ⭐ Star Messages
-- 📌 Pin Messages
-- 📤 Forward Messages
-- ⏰ Schedule Messages
-- 📂 Archive Chats
-- 🗑 Recover Deleted Messages
-
----
-
-### Calling
-
-- 🎤 Voice Calls
-- 🎥 Video Calls
-- 📺 Screen Sharing
-
----
-
-### AI Features
-
-- 🤖 AI Chat Assistant
-- 📝 AI Message Suggestions
-- 🌐 Automatic Translation
-- ✨ Smart Replies
-- 😊 Emotion Detection
-
----
-
-### Security
-
-- 🔒 End-to-End Encryption
-- 📱 Two-Factor Authentication
-- 🔑 OAuth Login
-- 🚨 Login Alerts
-
----
-
-### User Experience
-
-- 📲 Push Notifications
-- 🌍 Multi-language Support
-- 🎨 Custom Themes
-- 📊 User Analytics
-- 📈 Chat Statistics
-
----
-
-# 📚 Resources
-
-React
-
-https://react.dev
-
-Socket.IO
-
-https://socket.io
-
-Express
-
-https://expressjs.com
-
-Prisma
-
-https://www.prisma.io
-
-Neon Database
-
-https://neon.tech
-
-Cloudinary
-
-https://cloudinary.com
-
-Vercel
-
-https://vercel.com
-
-Render
-
-https://render.com
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
-Feel free to use this project for learning and educational purposes.
-
----
-
-# 👨‍💻 Author
-
-## Pranai Sai
-
-**Full Stack Developer**
-
-### Connect with me
-
-GitHub
-
-https://github.com/YOUR_GITHUB_USERNAME
-
-LinkedIn
-
-https://linkedin.com/in/YOUR_LINKEDIN
-
-Email
-
-YOUR_EMAIL@gmail.com
-
----
-
-# 🙏 Acknowledgements
-
-Special thanks to
-
-- React Team
-- Express Team
-- Socket.IO Team
-- Prisma Team
-- Neon Database
-- Cloudinary
-- Vercel
-- Render
-
-for providing amazing tools that made this project possible.
-
----
-
-# ⭐ Show Your Support
-
-If you found this project helpful,
-
-please consider giving it a ⭐ on GitHub.
-
-It helps others discover the project and motivates future improvements.
-
----
-
-# 💙 Thank You
-
-Thank you for visiting the repository.
-
-I hope you enjoy exploring **Chatz** as much as I enjoyed building it.
-
-Happy Coding! 🚀
-
----
-
-<div align="center">
-
-## ⭐ If you like this project, don't forget to star the repository!
-
-Made with ❤️ using
-
-**React • Node.js • Express • Socket.IO • Prisma • PostgreSQL • Cloudinary**
-
-</div>
+# 📈 Performance Considerations
+
+- Efficient Prisma queries
+- WebSocket-based real-time updates
+- Optimized state updates in React
+- Cloudinary CDN for media delivery
+- Hidden scrollbars for cleaner UI
+- Responsive layout for desktop and mobile
+- Persistent authentication using JWT
